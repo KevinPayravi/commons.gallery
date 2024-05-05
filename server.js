@@ -6,7 +6,7 @@ const fs = require('fs');
 const { JSDOM } = jsdom;
 const cors = require('cors')
 const app = express();
-const port = parseInt(process.env.PORT || 3001);
+const port = parseInt(process.env.PORT || 80);
 
 app.use(cors())
 
