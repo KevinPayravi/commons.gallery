@@ -146,7 +146,7 @@ async function generateDOM(revisionId) {
         });
       } else if (el.nodeName === 'H2') {
         const header = document.createElement('h2');
-        header.textContent = el.querySelector('span.mw-headline').textContent;
+        header.textContent = el.querySelector('span')?.textContent;
         resultGrid.append(header);
       } else if (el.nodeName === 'P') {
         resultGrid.innerHTML = el.innerHTML;
